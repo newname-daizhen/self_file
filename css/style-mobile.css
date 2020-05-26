@@ -968,6 +968,9 @@
 	.list-question .item .name {
 		font-size: 16px;
 		line-height: 21px;
+		overflow : hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
 	.list-question .item .info {
@@ -975,6 +978,7 @@
 		font-size: 13px;
 		color: #999999;
 		line-height: 18px;
+		height: 36px;
 		white-space: normal;
 		overflow : hidden;
 		text-overflow: ellipsis;
