@@ -119,6 +119,12 @@
 	.list-news .item:hover {
 		transform: translateY(-10px);
 	}
+	
+	.layui-laypage a:hover {
+		color: #FFF;
+		background: #1677FF;
+		border: 1px solid #1677FF;
+	}
 }
 
 
@@ -837,8 +843,8 @@
 
 	.soft-banner .smb-banner_info {
 		margin-top: 8px;
-		font-size: 18px;
-		line-height: 32px;
+		font-size: 17px;
+		line-height: 25px;
 		width: unset;
 	}
 
@@ -1143,11 +1149,6 @@
 		width: 100%;
 	}
 
-	.line-card .text>div.ol_list li::before,
-	.line-card .tips::before {
-		margin-left: -13px;
-	}
-
 	.list-sort {
 		margin-top: 30px;
 	}
@@ -1187,12 +1188,23 @@
 	}
 
 	.list-gx img {
-		margin: 20px auto;
+		margin: 15px auto;
 		max-width: 64%;
 		display: block;
 		width: unset;
 	}
-
+	.list-gx .sysjl{
+		margin-top: 0;
+	}
+	
+	.list-gx .sysjl3 p{
+		display: block;
+	}
+	.list-gx .sysjl3 p img{
+		max-width: 100%;
+		width: 64%;
+	}
+	
 	.list-gx.tel img {
 		max-width: 92%;
 	}
@@ -1214,7 +1226,7 @@
 	}
 
 	.list-qsy .text {
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 	.list-order_step li,
@@ -1533,7 +1545,8 @@
 	.wraper-hard_tp .line-card.invert .text {
 		padding-left: 15%;
 	}
-
+	
+	.line-card .text>div.ol_list li,
 	.wraper-hard_tp .text .tips {
 		margin-top: 0;
 		margin-bottom: 10px;
@@ -1541,10 +1554,11 @@
 		text-align: left;
 		line-height: 20px;
 	}
-
-	.wraper-hard_tp .line-card .text>div.ol_list li::before,
+	
+	.line-card .text>div.ol_list li::before,
 	.wraper-hard_tp .line-card .tips::before {
 		margin-top: 6px;
+		margin-left: -13px;
 		width: 8px;
 		height: 8px;
 	}
@@ -2015,7 +2029,7 @@
 	}
 
 	.list-join li {
-		margin-top: 10px;
+		margin-top: 15px;
 		width: 100%;
 		height: unset;
 		margin-right: 0;
@@ -2085,8 +2099,16 @@
 		padding: 40px 0;
 	}
 
-
 	.list-news .item a:active {
 		background: #F8F8F8;
+	}
+	
+	.under_img{
+		font-size: 12px;
+		line-height: 1;
+	}
+	
+	.wraper-soft_tab3 .img{
+		width: 100%;
 	}
 }

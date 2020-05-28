@@ -204,7 +204,7 @@ textarea {
 
 ul,
 ol {
-	list-style: none;
+	list-style: none !important;
 }
 
 li {
@@ -1232,9 +1232,9 @@ body {
 .line-card .tips {
 	margin-top: 18px;
 	padding-left: 19px;
-	font-size: 18px;
+	font-size: 16px;
 	color: #696969;
-	line-height: 18px;
+	line-height: 16px;
 }
 
 .line-card .text>div.ol_list li::before,
@@ -1854,9 +1854,11 @@ body {
 	margin: 60px 0 70px;
 }
 
+.list-gx .sysjl{
+	margin-top: 30px;
+}
 .list-gx .sysjl p,
 .list-gx .sysjl3 p{
-	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1897,6 +1899,10 @@ body {
 .list-zxx .item {
 	flex: 1;
 	text-align: center;
+}
+
+.list-zxx .item img{
+	max-width: 100%;
 }
 
 .list-zxx .item .num {
@@ -2010,10 +2016,13 @@ body {
 }
 
 .list-ai_hard .item {
+	margin: 0 13px;
 	height: 298px;
 	border-radius: 8px;
 	box-shadow: 0px 4px 20px 0px #ececec;
 	overflow: hidden;
+	box-sizing: border-box;
+	background: #FFF;
 }
 
 .list-ai_hard .img {
@@ -2546,7 +2555,8 @@ body {
 	text-align: center;
 }
 
-.cooper-form .btn a {
+.cooper-form .btn a,
+.cooper-form .btn button {
 	margin: 0 auto;
 	display: block;
 	width: 202px;
@@ -2663,19 +2673,14 @@ body {
 	border: 1px solid #DDD;
 }
 
-.smb-pagination li.active a,
-.smb-pagination li:hover a,
-.layui-laypage a.active,
-.layui-laypage a:hover,
-.layui-laypage-curr em.active,
-.layui-laypage-curr em:hover {
+.layui-laypage-curr .layui-laypage-em {
 	color: #FFF;
 	background: #1677FF;
 	border: 1px solid #1677FF;
 }
 
 .layui-laypage a,
-.layui-laypage-curr em{
+.layui-laypage .layui-laypage-curr{
 	margin-right: 8px;
 	float: left;
 	line-height: 32px;
@@ -2686,16 +2691,27 @@ body {
 	border-radius: 6px;
 	border: 1px solid #DDD;
 	font-style: normal;
+	overflow: hidden;
 }
 
 .layui-laypage-curr{
+	position: relative;
 	float: left;
 }
-
-.layui-laypage-curr .layui-laypage-em{
-	display: none;
+.layui-laypage-curr em{
+	position: relative;
+	color: #fff;
 }
-
+.layui-laypage-curr .layui-laypage-em{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #1677FF;
+	color: #FFF;
+}
 
 .wraper-news .article {
 	float: left;
@@ -3015,6 +3031,13 @@ body {
 	max-height: 100%;
 }
 
+.under_img {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 18px;
+	color: #393939;
+	line-height: 22px;
+}
 
 @media screen and (max-width:1400px) {
 	.swiper_banner .smb-banner_title{

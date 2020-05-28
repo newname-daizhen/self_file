@@ -6,16 +6,16 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<title>新闻列表</title>
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/smb-style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style-mobile.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/smb-style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style-mobile.css" />
 	</head>
 	<body>
 		<!-- 新闻-banner -->
 		<div class="soft-banner">
-			<img class="web" src="img/news-banner.png" alt="" >
-			<img class="hfive" src="img/banner_hf.png" alt="" >
+			<img class="web" src="img/news-banner.png" alt="">
+			<img class="hfive" src="img/banner_hf.png" alt="">
 			<div class="wrap-center">
 				<div class="smb-banner_text">
 					<h4 class="smb-banner_title">新闻动态</h4>
@@ -58,7 +58,7 @@
 		</div>
 		<div class="smb-pagination">
 			<div class="wrap-center">
-				<ul class="clearfix">
+				<!-- <ul class="clearfix">
 					<li>
 						<a href="javascript:void(0);">
 							<span class="web">&lt;</span>
@@ -80,7 +80,22 @@
 							<span class="hfive">下一页</span>
 						</a>
 					</li>
-				</ul>
+				</ul> -->
+				<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-3">
+					<a href="javascript:;" class="layui-laypage-prev" data-page="1">
+					 <i class="layui-icon"></i>
+					</a>
+					<a href="javascript:;" data-page="1">1</a>
+					<span class="layui-laypage-curr">
+						<em class="layui-laypage-em"></em>
+						<em>2</em>
+					</span>
+					<a href="javascript:;" data-page="3">3</a>
+					<span class="layui-laypage-spr">…</span>
+					<a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a>
+					<a href="javascript:;" class="layui-laypage-next" data-page="3">
+						<i class="layui-icon"></i>
+					</a>
 			</div>
 		</div>
 	</body>
